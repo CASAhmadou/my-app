@@ -87,3 +87,10 @@
         width: 100%;
     }
 }
+
+.done {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    color: black; 
+  }

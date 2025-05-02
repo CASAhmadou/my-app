@@ -6,6 +6,7 @@ interface Props{
   setTodo: React.Dispatch<React.SetStateAction<string>>;
   handleAdd: (e: React.FormEvent) => void;
 }
+
 const InputFeild: React.FC<Props> = ({todo, setTodo, handleAdd}) => {
   const inputRef = useRef<HTMLInputElement>(null);
 

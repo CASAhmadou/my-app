@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Todo } from '../models/entity';
+import { Todo } from '../../models/entity';
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { MdDone} from "react-icons/md";
-import "./styles.css";
-import { deleteTodo, updateTodo } from '../services/api';
+import "../styles.css";
+import { deleteTodo, updateTodo } from '../../services/api';
 import { error } from 'node:console';
 
 const IEdit = AiFillEdit as unknown as React.FC;

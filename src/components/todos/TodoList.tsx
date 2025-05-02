@@ -1,5 +1,5 @@
 import React from 'react'
-import { Todo } from '../models/entity'
+import { Todo } from '../../models/entity'
 import SingleTodo from './SingleTodo';
 
 interface Props {

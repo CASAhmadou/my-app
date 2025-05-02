@@ -41,14 +41,16 @@ export const addTodo = async (todo: string) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     });
+    if(!res.ok) throw new Error("Erreur lors de la mise à jour");
     return res.json();
   };
   
-  export const register = async (email: string, password: string) => {
+  export const register = async (name: string, email: string, password: string) => {
     const res = await fetch(`${API_BASE}/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ name, email, password }),
     });
+    if(!res.ok) throw new Error("Erreur lors de la mise à jour");
     return res.json();
   };
